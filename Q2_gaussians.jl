@@ -40,8 +40,8 @@ Does this confirm your intuition that the samples will be near the origin?
 
 
 # ╔═╡ 117c783a-6112-11eb-0cfc-bb24a3234baf
-"""md
-### Draw 10000 samples from $D=\{1,2,3,10,100\}$ Gaussians and, on a single plot, show the normalized histograms for the distance of those samples from the origin. As the dimensionality of the Gaussian increases, what can you say about the expected distance of the samples from the Gaussian's mean (in this case, origin).
+md"""
+Draw 10000 samples from $D=\{1,2,3,10,100\}$ Gaussians and, on a single plot, show the normalized histograms for the distance of those samples from the origin. As the dimensionality of the Gaussian increases, what can you say about the expected distance of the samples from the Gaussian's mean (in this case, origin).
 
 Answer
 """
@@ -165,7 +165,7 @@ How does the log-likelihood along the linear interpolation compare to the log-li
 # ╟─0634fd58-6112-11eb-37f6-45112ee734ae
 # ╟─08b6ed2a-6112-11eb-3277-69f7c404be51
 # ╠═86371c3e-6112-11eb-1660-f32994a6b1a5
-# ╟─117c783a-6112-11eb-0cfc-bb24a3234baf
+# ╠═117c783a-6112-11eb-0cfc-bb24a3234baf
 # ╟─1ccebb58-6112-11eb-3028-cff830e3a9e8
 # ╟─387dc1de-6174-11eb-069c-e70e4483ea67
 # ╠═67cc8c54-6174-11eb-02d1-95d31e908329

@@ -601,19 +601,19 @@ x = randn()
 μ = randn()
 σ = rand()
 @test size(gaussian_log_likelihood(μ,σ,x)) == () # Scalar log-likelihood
-@test gaussian_log_likelihood.(μ,σ,x) ≈ log.(pdf.(Normal(μ,σ),x)) # Correct Value
+@test gaussian_log_likelihood.(μ,σ,x) ≈ logpdf.(Normal(μ,σ),x) # Correct Value
 # Vector valued x under constant mean and variance
 x = randn(100)
 μ = randn()
 σ = rand()
 @test size(gaussian_log_likelihood.(μ,σ,x)) == (100,) # Vector of log-likelihoods
-@test gaussian_log_likelihood.(μ,σ,x) ≈ log.(pdf.(Normal(μ,σ),x)) # Correct Values
+@test gaussian_log_likelihood.(μ,σ,x) ≈ logpdf.(Normal(μ,σ),x) # Correct Values
 # Vector valued x under vector valued mean and variance
 x = randn(10)
 μ = randn(10)
 σ = rand(10)
 @test size(gaussian_log_likelihood.(μ,σ,x)) == (10,) # Vector of log-likelihoods
-@test gaussian_log_likelihood.(μ,σ,x) ≈ log.(pdf.(Normal.(μ,σ),x)) # Correct Values
+@test gaussian_log_likelihood.(μ,σ,x) ≈ logpdf.(Normal.(μ,σ),x) # Correct Values
 end
 
 # ╔═╡ d4a5a4e6-6179-11eb-0596-bb8ddc6027fb
